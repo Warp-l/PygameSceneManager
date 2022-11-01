@@ -25,8 +25,8 @@ class MainScene(Scene):
         """
         Метод, добавляющий на сцену спрайты
         """
-        self.add_sprite_to_scene(name='big_bg', image='main_bg.jpg', center=(400, 300), size=(800, 600), transparency=False)
-        self.add_sprite_to_scene(name='bg', image='main_big_bg.jpg', center=(400, 400), size=(450, 350), transparency=False)
+        self.add_sprite_to_scene(name='big_bg', image='main_big_bg.jpg', center=(400, 300), size=(800, 600), transparency=False)
+        self.add_sprite_to_scene(name='bg', image='main_bg.jpg', center=(400, 400), size=(450, 350), transparency=False)
 
 
     def create_labels(self) -> None:

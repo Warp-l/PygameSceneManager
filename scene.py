@@ -32,12 +32,12 @@ class Scene:
         Функция вызывается при отрисовке сцены, отрисовывает все надписи, спрайты и кнопки
         """
         for sprite in self.sprites.keys():
-            self.controller.screen.blit(self.sprites[sprite]['image'], self.sprites[sprite]['rect'])
+            screen.blit(self.sprites[sprite]['image'], self.sprites[sprite]['rect'])
         for button in self.buttons.keys():
-            self.controller.screen.blit(self.buttons[button]['image'], self.buttons[button]['image_rect'])
-            self.controller.screen.blit(self.buttons[button]['text'], self.buttons[button]['text_rect'])
+            screen.blit(self.buttons[button]['image'], self.buttons[button]['image_rect'])
+            screen.blit(self.buttons[button]['text'], self.buttons[button]['text_rect'])
         for label in self.labels.keys():
-            self.controller.screen.blit(self.labels[label]['label'], self.labels[label]['rect'])
+            screen.blit(self.labels[label]['label'], self.labels[label]['rect'])
 
     def add_sprite_to_scene(self, name: str, image: str, center: tuple[int, int], size: tuple[int, int], transparency: bool = False) -> None:
         """
